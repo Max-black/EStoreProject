@@ -1,0 +1,728 @@
+@charset "utf-8";
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+b,
+strong {
+    font-weight: normal;
+}
+
+u,
+a {
+    text-decoration: none;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    display: block;
+}
+
+input {
+    outline: none;
+}
+
+body {
+    font-family: "微软雅黑";
+    background: url("../images/website_bg_feb.jpg");
+    //  background-color:#9c012a ;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.clear_fix:after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+#head {
+    #topTop {
+        height: 40px;
+        margin: 0 auto;
+        font-size: 18px;
+        color: #FFFF00;
+        background: #f69686;
+        span {
+            width: 950px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            background: #f69686;
+            display: block;
+            z-index: 100;
+            position: fixed;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top: 0;
+        }
+    }
+    #top {
+        height: 28px;
+        background: white;
+        .topcen {
+            height: 28px;
+            width: 950px;
+            margin: 0 auto;
+            background: url('http://imgs3.cosme-de.com/gb/images/top_area_bg_t.gif');
+            #topLeft {
+                float: left;
+                height: 28px;
+                font-size: 12px;
+                font-weight: 600;
+                cursor: pointer;
+                position: relative;
+                z-index: 6;
+                .down {
+                    width: 30px;
+                    float: right;
+                }
+                #lanLi {
+                    height: 28px;
+                    width: 120px;
+                    float: left;
+                    line-height: 28px;
+                    color: #93846f;
+                    text-align: left;
+                    //              margin-top: 10px;
+                    position: relative;
+                    z-index: 1;
+                    background: #fff;
+                    .down {
+                        float: right;
+                        height: 12px;
+                        margin-top: 8px;
+                        line-height: 13px;
+                        border-right: 2px solid #93846f;
+                    }
+                    #lanUl {
+                        width: 120px;
+                        display: none;
+                        position: absolute;
+                        height: 115px;
+                        top: 20px;
+                        //                  z-index: 1!important;
+                        background: white;
+                        li {
+                            height: 15px;
+                            //                          margin-top: 5px;
+                        }
+                        li:hover {
+                            color: gray;
+                        }
+                    }
+                }
+                #fontFam {
+                    height: 28px;
+                    width: 120px;
+                    line-height: 28px;
+                    color: #93846f;
+                    float: right;
+                    text-align: center;
+                    position: relative;
+                    z-index: 1;
+                    background: white;
+                    #fontFamUl {
+                        width: 120px;
+                        display: none;
+                        // display: none;
+                        background: white;
+                        position: absolute;
+                        top: 22px;
+                        li {
+                            margin-top: 5px;
+                            height: 15px;
+                            line-height: 7px;
+                        }
+                        li:hover {
+                            color: gray;
+                        }
+                    }
+                }
+            }
+            #topRight {
+                float: right;
+                height: 28px;
+                li {
+                    float: left;
+                    height: 12px;
+                    border-right: 1px solid #93846f;
+                    margin-top: 8px;
+                    line-height: 9px;
+                    a {
+                        font-size: 12px;
+                        color: #93846f;
+                        margin: 0 6px 0 6px;
+                    }
+                    a:hover {
+                        color: #990033;
+                    }
+                }
+                li:nth-child(5) {
+                    border-right: none;
+                }
+            }
+        }
+    }
+    #logo {
+        height: 75px;
+        background: rgb(147, 132, 111);
+        .logocen {
+            height: 75px;
+            width: 950px;
+            margin: 0 auto;
+            position: relative;
+            background: url('http://cn.cosme-de.com/gb/images/top_area_bg_b.gif');
+            h1 {
+                float: left;
+            }
+            #shopcar {
+                width: 255px;
+                height: 66px;
+                border: 1px darkgray solid;
+                border-radius: 10px;
+                margin-top: 5px;
+                float: right;
+                overflow: hidden;
+                cursor: pointer;
+                img {
+                    float: left;
+                    margin: 5px 0 0 5px;
+                }
+                #counta {
+                    width: 60px;
+                    float: right;
+                    text-align: right;
+                    margin: 5px 7px 0 0;
+                    font-size: 12px;
+                    color: white;
+                    font-weight: 800;
+                }
+                #mon {
+                    display: block;
+                    float: right;
+                    margin: 3px 5px 0 0;
+                    font-size: 12px;
+                    color: white;
+                    font-weight: 800;
+                }
+                #moveul {
+                    height: 15px;
+                    float: right;
+                    width: 180px;
+                    position: absolute;
+                    overflow: hidden;
+                    bottom: 9px;
+                    right: -10px;
+                    line-height: 13px;
+                    #move {
+                        position: absolute;
+                        height: 15px;
+                        //                  top: -15px;
+                        li {
+                            height: 15px;
+                            width: 203;
+                        }
+                        a {
+                            font-size: 13px;
+                            color: #dfc3b8;
+                        }
+                        a:hover {
+                            color: #990033;
+                        }
+                    }
+                }
+            }
+            #shopcar:hover {
+                background: rgba(153, 153, 153, 0.5);
+            }
+        }
+    }
+    #bigNav {
+        height: 96px;
+        width: 950px;
+        margin: 0 auto;
+        #nav {
+            height: 38px;
+            background: rgb(184, 175, 163);
+            width: 950px;
+            ul {
+                height: 38px;
+                line-height: 38px;
+                text-align: center;
+                width: 950px;
+                margin-left: -5px;
+                li {
+                    height: 38px;
+                    line-height: 38px;
+                    text-align: center;
+                    float: left;
+                    width: 75px;
+                    a {
+                        font-size: 12px;
+                        color: white;
+                        display: block;
+                        height: 38px;
+                        line-height: 38px;
+                        text-align: center;
+                    }
+                    .last {
+                        width: 90px;
+                        height: 38px;
+                        margin-left: 20px;
+                        background: url("http://cn.cosme-de.com/gb/images/menu/13_before_its_gone.png");
+                    }
+                    a:hover {
+                        color: #990033;
+                    }
+                    .last:hover {
+                        background: url("http://cn.cosme-de.com/gb/images/menu/13_before_its_gone_o.png");
+                    }
+                }
+                li:last-child {
+                    margin-left: 25px;
+                }
+            }
+        }
+    }
+    #select {
+        height: 35px;
+        background: #e1e1e1;
+        input {
+            width: 195px;
+            height: 16px;
+            color: #93846f;
+            font-size: 11px;
+            line-height: 13px;
+            margin: 7px 0 0 25px;
+            padding-left: 5px;
+            float: left;
+        }
+        select {
+            width: 197px;
+            height: 20px;
+            padding-left: 3px;
+            color: #93846F;
+            font-size: 11px;
+            line-height: 13px;
+            margin: 7px 0 0 3px;
+            float: left;
+        }
+        .sel {
+            width: 45px;
+            height: 21px;
+            float: left;
+            margin: 7px 0 0 5px;
+            background: url("http://cn.cosme-de.com/gb/images/search_button_01.gif");
+        }
+        .sel:hover {
+            background: url("http://cn.cosme-de.com/gb/images/search_button_02.gif");
+        }
+        ul {
+            float: left;
+            height: 28px;
+            width: 200px;
+            text-align: center;
+            margin: 5px 0 0 5px;
+            li {
+                float: left;
+                height: 13px;
+                width: 95px;
+                line-height: 12px;
+                text-align: center;
+                margin-top: 5px;
+                border-right: 2px solid #93846f;
+                a {
+                    font-size: 13px;
+                    color: #93846f;
+                }
+                a:hover {
+                    color: #903;
+                }
+            }
+            li:last-child {
+                border-right: none;
+            }
+        }
+        .sale {
+            float: left;
+            width: 160px;
+            height: 25px;
+            margin: 3px 0 0 60px;
+            background: url("http://cn.cosme-de.com/gb/images/offers_button.png");
+            background-color: pink;
+        }
+    }
+    #hot {
+        height: 23px;
+        background: #E1E1E1;
+        h6 {
+            font-size: 12px;
+            font-weight: 800;
+            margin-left: 25px;
+            color: #666;
+            float: left;
+        }
+        ul {
+            height: 23px;
+            width: 850px;
+            text-align: center;
+            line-height: 23px;
+            li {
+                height: 23px;
+                //           width: 50px;
+                line-height: 13px;
+                text-align: center;
+                float: left;
+                margin-left: 20px;
+                a {
+                    font-size: 12px;
+                    color: #666;
+                }
+                a:hover {
+                    color: #903;
+                }
+            }
+        }
+    }
+}
+
+.wayOfpay {
+    margin: 0 auto;
+    width: 950px;
+    text-align: center;
+    background: white;
+    height: 109px;
+    font-size: 12px;
+    color: gray;
+    padding-top: 10px;
+    .monType {
+        display: block;
+        height: 16px;
+        line-height: 16px;
+        text-align: center;
+        margin: 10px auto;
+        .type {
+            font-size: 12px;
+            color: gray;
+            width: 200px;
+            height: 20px;
+        }
+    }
+    p {
+        height: 16px;
+        line-height: 16px;
+        text-align: center;
+    }
+    .pay {
+        display: block;
+        width: 665px;
+        height: 50px;
+        text-align: center;
+        margin: 10px auto;
+        img {
+            display: inline;
+            float: left;
+            margin-left: 3px;
+        }
+    }
+}
+
+#bottom {
+    width: 950px;
+    margin: 0 auto;
+    position: relative;
+    background: white;
+    #aside {
+        //      width: 450px;
+        height: 600px;
+        margin: 0 auto;
+        position: absolute; //相对于父元素定位左边950px
+        left: 950px;
+        bottom: 0;
+        //      z-index: -1;
+        overflow: hidden;
+        #asidesmall {
+            width: 150px;
+            height: 600px;
+            position: fixed; //相对于可视窗口粘性定位，不受父元素影响
+            bottom: 0;
+            float: left;
+            //          background: pink;
+            
+             li:nth-child(1){
+                 display: block;
+             }
+            li {
+                          display: none;
+                position: absolute;
+            }
+        }
+    }
+    .about {
+        height: 388px;
+        padding-top: 15px;
+        width: 900px;
+        text-align: center;
+        margin: 0 auto;
+        .main {
+            width: 900px;
+            height: 89px;
+            text-align: right;
+            font-size: 12px;
+            color: gray;
+            background: url("http://cn.cosme-de.com/gb/images/latest_announcements_bg.gif") repeat-y;
+            border-top: 1px gray dashed;
+            border-bottom: 1px gray dashed;
+            td {
+                height: 15px;
+                //              line-height: 5px;
+                img {
+                    display: inline;
+                    margin-right: 4px;
+                }
+            }
+            td:nth-child(4) {
+                color: red;
+            }
+            td:nth-child(5) {
+                text-align: left;
+                padding-left: 10px;
+                //              ;
+            }
+            td:nth-child(6) {
+                text-align: left;
+            }
+        }
+        .emal {
+            display: block;
+            width: 635px;
+            height: 30px;
+            margin: 0 auto;
+            font-size: 11px;
+            color: #93846f;
+            line-height: 30px;
+            em {
+                float: left;
+                font-size: 14px;
+                font-weight: 600;
+            }
+            span {
+                float: left;
+                margin-right: 17px;
+            }
+            input {
+                width: 260px;
+                height: 15px;
+                padding-left: 5px;
+                line-height: 15px;
+                font-size: 11px;
+                color: #93846f;
+                float: left;
+                margin: 5px 10px 0 0;
+            }
+            a {
+                float: left;
+                margin: 5px 0 0 0;
+            }
+        }
+        .safe {
+            border-top: 1px gray dashed;
+            width: 900px;
+            height: 101px;
+            padding-top: 20px;
+            .txt {
+                float: left;
+                width: 706px;
+                height: 101px;
+                border-right: 1px #A9A9A9 solid;
+                h5 {
+                    font-size: 12px;
+                    color: #666;
+                    display: block;
+                    width: 606px;
+                    text-align: left;
+                    margin-left: 77px;
+                }
+                .aaa {
+                    display: block;
+                    height: 72px;
+                    //                  width: 606px;
+                    float: left;
+                    line-height: 72px;
+                    margin-left: 77px;
+                    margin-top: 10px;
+                    position: relative;
+                    span {
+                        float: left;
+                        height: 72px;
+                        width: 102px;
+                        line-height: 72px;
+                        text-align: center;
+                        position: relative;
+                        img {
+                            position: absolute;
+                            bottom: 0;
+                            top: 0;
+                            //                          left: 150px;
+                            display: block;
+                            margin: auto 0;
+                        }
+                    }
+                    span:nth-child(1) {
+                        width: 110px;
+                    }
+                    span:nth-child(2) {
+                        width: 103px;
+                    }
+                    span:nth-child(3) {
+                        left: -10px;
+                        width: 102px;
+                    }
+                    span:nth-child(4) {
+                        left: 10px;
+                        width: 86px;
+                        img {
+                            width: 76px;
+                        }
+                    }
+                    span:nth-child(6) {
+                        width: 120px;
+                    }
+                    span:nth-child(5) {
+                        width: 82px;
+                    }
+                }
+            }
+        }
+        .pic {
+            float: left;
+            margin: 10px 0 0 30px;
+            text-align: center;
+            p {
+                font-size: 12px;
+                margin-top: -13px;
+                color: #666;
+            }
+        }
+    }
+    .bot {
+        width: 900px;
+        height: 42px;
+        margin-top: 30px;
+        text-align: center;
+        img {
+            margin: 0 auto;
+        }
+        p {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+    }
+}
+
+#foot {
+    width: 100%;
+    height: 28px;
+    background: #93846f;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    .time {
+        font-size: 14px;
+        color: white;
+        font-weight: 800;
+    }
+    ul {
+        height: 24px;
+        float: right;
+        width: 150px;
+        //      line-height: 24px;
+        li {
+            width: 40px;
+            height: 12px;
+            text-align: center;
+            line-height: 12px;
+            margin-top: 8px;
+            float: left;
+            border-left: 2px solid white;
+            a {
+                display: block;
+                margin-right: 10px;
+                font-size: 12px;
+                color: white;
+                font-weight: 700;
+            }
+            a:last-child {
+                margin-right: 0;
+            }
+        }
+        li:first-child {
+            width: 90px;
+            border-left: none;
+        }
+    }
+    .shopcarFoot {
+        float: right;
+        width: 293px;
+        height: 20px;
+        margin: 3px 5px 0 0;
+        border: 1px white solid;
+        border-radius: 3px;
+        img {
+            margin-top: -2px;
+            float: left;
+        }
+        a {
+            float: right;
+            font-size: 12px;
+            color: white;
+            margin-right: 3px;
+            font-weight: 700;
+        }
+    }
+}
